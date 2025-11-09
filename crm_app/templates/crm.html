@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .top-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+            height: 80px;
+            background-color: #fafafa;
+            padding: 0 20px;
+            border-bottom: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .top-bar button {
+            font-size: 14px;
+            padding: 10px 20px;
+        }
+        .top-bar input[type="text"] {
+            font-size: 14px;
+            padding: 10px;
+            height: 20px;
+            width: 800px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="top-bar">
+        <div>
+            <button class="return-button" onclick="window.location.href='/logout'" style="background-color: red; color: white;">Logout</button>
+        </div>
+    </div>
+    <div class="flex">
+        <div class="w-1/5 bg-gray-800 text-white p-4">
+            <h1 class="text-lg font-bold">Agile CRM</h1>
+            <ul class="mt-4">
+                <li class="py-2"><i class="fas fa-tachometer-alt"></i> Dashboard</li>
+                <li class="py-2"><i class="fas fa-users"></i> Contacts</li>
+                <li class="py-2"><i class="fas fa-chart-line"></i> Reports</li>
+                <li class="py-2"><i class="fas fa-cog"></i> Settings</li>
+            </ul>
+        </div>
+        <div class="w-4/5 p-6">
+            <div class="bg-blue-500 text-white p-4 rounded-lg">
+                <h2 class="text-xl">Dashboard</h2>
+                <p>Welcome to Agile CRM</p>
+            </div>
+            <div class="grid grid-cols-2 gap-4 mt-4">
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <h3 class="text-lg">120</h3>
+                    <p>New contacts</p>
+                </div>
+                <div class="bg-purple-500 text-white p-4 rounded-lg shadow">
+                    <h3 class="text-lg">$545</h3>
+                    <p>Won from 9 deals</p>
+                </div>
+                <div class="bg-blue-500 text-white p-4 rounded-lg shadow">
+                    <h3 class="text-lg">1008</h3>
+                    <p>Campaign emails sent</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <h3 class="text-lg">30</h3>
+                    <p>New deals worth $5,318</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4 mt-4">
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <h3 class="text-lg">My Deals Funnel</h3>
+                    <img src="https://placehold.co/300x200" alt="Funnel chart showing deal stages" />
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <h3 class="text-lg">Emails Opened</h3>
+                    <div class="flex items-center justify-center">
+                        <div class="w-24 h-24 rounded-full border-4 border-green-500 flex items-center justify-center">
+                            <span class="text-2xl">100%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4 mt-4">
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <h3 class="text-lg">Revenue Graph</h3>
+                    <img src="https://placehold.co/300x200" alt="Graph showing revenue over the quarter" />
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <h3 class="text-lg">Task Report</h3>
+                    <img src="https://placehold.co/300x200" alt="Bar chart showing task completion" />
+                </div>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow mt-4">
+                <h3 class="text-lg">Tasks</h3>
+                <ul>
+                    <li>Call for Demo - Francois</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

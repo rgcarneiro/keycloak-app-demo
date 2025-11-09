@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontomais</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .top-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+            height: 80px;
+            background-color: #fafafa;
+            padding: 0 20px;
+            border-bottom: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .top-bar button {
+            font-size: 14px;
+            padding: 10px 20px;
+        }
+        .top-bar input[type="text"] {
+            font-size: 14px;
+            padding: 10px;
+            height: 20px;
+            width: 800px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="top-bar">
+        <div>
+            <button class="return-button" onclick="window.location.href='/logout'" style="background-color: red; color: white;">Logout</button>
+        </div>
+    </div>
+    <div class="flex">
+        <aside class="w-64 bg-white shadow-md">
+            <div class="p-4">
+                <h1 class="text-xl font-bold">pontomais</h1>
+            </div>
+            <nav class="mt-4">
+                <ul>
+                    <li class="p-2 hover:bg-gray-200"><a href="#">Indicadores</a></li>
+                    <li class="p-2 hover:bg-gray-200"><a href="#">Meu perfil</a></li>
+                    <li class="p-2 hover:bg-gray-200"><a href="#">Meu ponto</a></li>
+                    <li class="p-2 hover:bg-gray-200"><a href="#">Minha equipe</a></li>
+                    <li class="p-2 hover:bg-gray-200"><a href="#">Solicitações</a></li>
+                    <li class="p-2 hover:bg-gray-200"><a href="#">Controle de ponto</a></li>
+                    <li class="p-2 hover:bg-gray-200"><a href="#">Relatórios</a></li>
+                    <li class="p-2 hover:bg-gray-200"><a href="#">Consulta de processos</a></li>
+                    <li class="p-2 hover:bg-gray-200"><a href="#">Configurações</a></li>
+                    <li class="p-2 hover:bg-gray-200"><a href="#">Opções de ajuda</a></li>
+                    <li class="p-2 hover:bg-gray-200"><a href="#">Marketplace</a></li>
+                    <li class="p-2 hover:bg-gray-200"><a href="#">Indique um amigo</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="flex-1 p-6">
+            <div class="flex justify-between items-center mb-4">
+                <button class="bg-teal-500 text-white px-4 py-2 rounded">Retornar para versão anterior</button>
+                <h2 class="text-2xl font-semibold">Controle de ponto</h2>
+                <button class="bg-teal-500 text-white px-4 py-2 rounded">Bater ponto</button>
+            </div>
+            <div class="bg-white shadow-md p-4 rounded">
+                <div class="flex justify-between mb-4">
+                    <div>
+                        <h3 class="text-lg font-bold">Marcela Silva | Analista SEO</h3>
+                        <p>Marketing Conteúdo | Turno Administrativo</p>
+                    </div>
+                    <div class="flex items-center">
+                        <label class="mr-2">Começando em:</label>
+                        <input type="date" class="border rounded p-1">
+                        <label class="mx-2">Terminando em:</label>
+                        <input type="date" class="border rounded p-1">
+                        <button class="bg-teal-500 text-white px-4 py-2 rounded ml-2">Buscar</button>
+                    </div>
+                </div>
+                <table class="min-w-full border-collapse border border-gray-300">
+                    <thead>
+                        <tr>
+                            <th class="border border-gray-300 p-2">Data</th>
+                            <th class="border border-gray-300 p-2">Solic.</th>
+                            <th class="border border-gray-300 p-2">Ocorr.</th>
+                            <th class="border border-gray-300 p-2">Entrada e Saída</th>
+                            <th class="border border-gray-300 p-2">H.E.</th>
+                            <th class="border border-gray-300 p-2">H.F.</th>
+                            <th class="border border-gray-300 p-2">Saldo Banco</th>
+                            <th class="border border-gray-300 p-2">Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="border border-gray-300 p-2"><input type="text" value="Seg 26 jul" class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2"><input type="text" value="-" class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2"><input type="text" value="Nenhum ponto." class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2"><input type="text" value="00:00" class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2"><input type="text" value="00:00" class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2"><input type="text" value="00:00" class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2"><input type="text" value="00:00" class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2">
+                                <button class="text-blue-500"><i class="fas fa-edit"></i></button>
+                                <button class="text-blue-500"><i class="fas fa-eye"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 p-2"><input type="text" value="Dom 25 jul" class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2"><input type="text" value="-" class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2"><input type="text" value="Nenhum ponto." class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2"><input type="text" value="00:00" class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2"><input type="text" value="00:00" class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2"><input type="text" value="00:00" class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2 text-red-500"><input type="text" value="-222:48" class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2">
+                                <button class="text-blue-500"><i class="fas fa-edit"></i></button>
+                                <button class="text-blue-500"><i class="fas fa-eye"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 p-2"><input type="text" value="Sáb 24 jul" class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2"><input type="text" value="-" class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2"><input type="text" value="Nenhum ponto." class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2"><input type="text" value="00:00" class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2"><input type="text" value="00:00" class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2"><input type="text" value="00:00" class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2 text-red-500"><input type="text" value="-222:48" class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2">
+                                <button class="text-blue-500"><i class="fas fa-edit"></i></button>
+                                <button class="text-blue-500"><i class="fas fa-eye"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 p-2"><input type="text" value="Sex 23 jul" class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2"><input type="text" value="-" class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2 text-red-500"><input type="text" value="Alerta" class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2"><input type="text" value="08:00" class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2"><input type="text" value="00:00" class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2"><input type="text" value="00:00" class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2 text-red-500"><input type="text" value="-222:48" class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2">
+                                <button class="text-blue-500"><i class="fas fa-edit"></i></button>
+                                <button class="text-blue-500"><i class="fas fa-eye"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 p-2"><input type="text" value="Qua 22 jul" class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2"><input type="text" value="-" class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2"><input type="text" value="Nenhum ponto." class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2"><input type="text" value="08:00" class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2"><input type="text" value="00:00" class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2"><input type="text" value="00:00" class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2 text-red-500"><input type="text" value="-214:48" class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2">
+                                <button class="text-blue-500"><i class="fas fa-edit"></i></button>
+                                <button class="text-blue-500"><i class="fas fa-eye"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 p-2"><input type="text" value="Qua 21 jul" class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2"><input type="text" value="-" class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2"><input type="text" value="Nenhum ponto." class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2"><input type="text" value="08:00" class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2"><input type="text" value="00:00" class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2"><input type="text" value="00:00" class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2 text-red-500"><input type="text" value="-206:48" class="border-none w-full" /></td>
+                            <td class="border border-gray-300 p-2">
+                                <button class="text-blue-500"><i class="fas fa-edit"></i></button>
+                                <button class="text-blue-500"><i class="fas fa-eye"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="fixed bottom-4 right-4">
+                <button class="bg-teal-500 text-white p-2 rounded-full">
+                    <i class="fas fa-question"></i> Ajuda
+                </button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
